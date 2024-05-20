@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 th:text="'Welcome GetParameter'"></h1>
+<!--    <img th:src="@{img/orange.jpg}" alt="Apple"/>-->
+<!--    <img th:src="@{img/supernova.jpg}" alt="Sususususupernova" width="300px"/>-->
+    <a th:href="@{test1}">test1 GET</a> <br/>
+    <a th:href="@{test2?data1=100&data2=200&data3=300}">test2_HttpServletRequest1</a> <br/>
+    <a th:href="@{test3?data1=100&data2=이지연&data3=구라같은데}">test3_WebRequest</a> <br/>
+    <a th:href="@{test4?data1=sususu&data2=supernova&data3=nova&data3=nova}">test4_HttpServletRequest2</a> <br/>
+</body>
+</html>
